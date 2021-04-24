@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11191" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11191"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="OpenMacX" customModuleProvider="target">
+            <connections>
+                <outlet property="startMenu" destination="zy1-PS-hDv" id="pDA-WS-k7f"/>
+                <outlet property="stopMenu" destination="Fe8-AE-Tus" id="4LC-Dd-55Y"/>
+                <outlet property="sysMenu" destination="goA-03-kun" id="OSm-EJ-Wpz"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu id="goA-03-kun">
+            <items>
+                <menuItem title="Start Service" enabled="NO" id="zy1-PS-hDv" userLabel="Start">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="startAction:" target="Voe-Tx-rLC" id="z44-eg-Gcq"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Stop" enabled="NO" id="Fe8-AE-Tus" userLabel="Stop">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="stopAction:" target="Voe-Tx-rLC" id="OKZ-br-hZc"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="rb9-HV-PMD"/>
+                <menuItem title="Exit OpenMac" id="wky-TG-Ndk" userLabel="Exit">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="exitAction:" target="Voe-Tx-rLC" id="eZm-re-HoG"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+</document>

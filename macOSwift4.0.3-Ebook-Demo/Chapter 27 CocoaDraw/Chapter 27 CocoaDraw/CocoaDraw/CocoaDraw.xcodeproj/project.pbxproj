@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7177255B1DA8797800411E9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177255A1DA8797800411E9E /* AppDelegate.swift */; };
+		7177255D1DA8797800411E9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177255C1DA8797800411E9E /* ViewController.swift */; };
+		7177255F1DA8797800411E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7177255E1DA8797800411E9E /* Assets.xcassets */; };
+		717725621DA8797800411E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 717725601DA8797800411E9E /* Main.storyboard */; };
+		7177256A1DA8799700411E9E /* AffineTransView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717725691DA8799700411E9E /* AffineTransView.swift */; };
+		7177256C1DA9279200411E9E /* LockFocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177256B1DA9279200411E9E /* LockFocusView.swift */; };
+		7177256E1DA9EE5300411E9E /* ShadowDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177256D1DA9EE5300411E9E /* ShadowDrawView.swift */; };
+		717725701DA9F06600411E9E /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177256F1DA9F06600411E9E /* ColorViewController.swift */; };
+		717725721DA9F1B000411E9E /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717725711DA9F1B000411E9E /* ImageViewController.swift */; };
+		717725741DA9F25500411E9E /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 717725731DA9F25500411E9E /* image.png */; };
+		717725761DA9F2DA00411E9E /* ShadowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717725751DA9F2DA00411E9E /* ShadowViewController.swift */; };
+		717725781DA9F7F800411E9E /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717725771DA9F7F800411E9E /* GradientViewController.swift */; };
+		7177257A1DAA134F00411E9E /* LineGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717725791DAA134F00411E9E /* LineGradientView.swift */; };
+		7177257C1DAA2D7800411E9E /* RadialGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177257B1DAA2D7800411E9E /* RadialGradientView.swift */; };
+		7177257E1DAA37B100411E9E /* StringDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177257D1DAA37B100411E9E /* StringDrawView.swift */; };
+		717725801DAA723700411E9E /* DrawObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177257F1DAA723700411E9E /* DrawObject.swift */; };
+		717725821DAA89CE00411E9E /* PathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717725811DAA89CE00411E9E /* PathView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		717725571DA8797800411E9E /* CocoaDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7177255A1DA8797800411E9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7177255C1DA8797800411E9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7177255E1DA8797800411E9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		717725611DA8797800411E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		717725631DA8797800411E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		717725691DA8799700411E9E /* AffineTransView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AffineTransView.swift; sourceTree = "<group>"; };
+		7177256B1DA9279200411E9E /* LockFocusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockFocusView.swift; sourceTree = "<group>"; };
+		7177256D1DA9EE5300411E9E /* ShadowDrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowDrawView.swift; sourceTree = "<group>"; };
+		7177256F1DA9F06600411E9E /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		717725711DA9F1B000411E9E /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		717725731DA9F25500411E9E /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		717725751DA9F2DA00411E9E /* ShadowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowViewController.swift; sourceTree = "<group>"; };
+		717725771DA9F7F800411E9E /* GradientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
+		717725791DAA134F00411E9E /* LineGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineGradientView.swift; sourceTree = "<group>"; };
+		7177257B1DAA2D7800411E9E /* RadialGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadialGradientView.swift; sourceTree = "<group>"; };
+		7177257D1DAA37B100411E9E /* StringDrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringDrawView.swift; sourceTree = "<group>"; };
+		7177257F1DAA723700411E9E /* DrawObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawObject.swift; sourceTree = "<group>"; };
+		717725811DAA89CE00411E9E /* PathView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		717725541DA8797800411E9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7177254E1DA8797700411E9E = {
+			isa = PBXGroup;
+			children = (
+				717725591DA8797800411E9E /* CocoaDraw */,
+				717725581DA8797800411E9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		717725581DA8797800411E9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				717725571DA8797800411E9E /* CocoaDraw.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		717725591DA8797800411E9E /* CocoaDraw */ = {
+			isa = PBXGroup;
+			children = (
+				7177255A1DA8797800411E9E /* AppDelegate.swift */,
+				7177255C1DA8797800411E9E /* ViewController.swift */,
+				717725731DA9F25500411E9E /* image.png */,
+				7177256F1DA9F06600411E9E /* ColorViewController.swift */,
+				7177256D1DA9EE5300411E9E /* ShadowDrawView.swift */,
+				717725691DA8799700411E9E /* AffineTransView.swift */,
+				7177256B1DA9279200411E9E /* LockFocusView.swift */,
+				7177255E1DA8797800411E9E /* Assets.xcassets */,
+				717725601DA8797800411E9E /* Main.storyboard */,
+				717725771DA9F7F800411E9E /* GradientViewController.swift */,
+				717725791DAA134F00411E9E /* LineGradientView.swift */,
+				7177257B1DAA2D7800411E9E /* RadialGradientView.swift */,
+				7177257D1DAA37B100411E9E /* StringDrawView.swift */,
+				717725811DAA89CE00411E9E /* PathView.swift */,
+				7177257F1DAA723700411E9E /* DrawObject.swift */,
+				717725751DA9F2DA00411E9E /* ShadowViewController.swift */,
+				717725631DA8797800411E9E /* Info.plist */,
+				717725711DA9F1B000411E9E /* ImageViewController.swift */,
+			);
+			path = CocoaDraw;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		717725561DA8797800411E9E /* CocoaDraw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 717725661DA8797800411E9E /* Build configuration list for PBXNativeTarget "CocoaDraw" */;
+			buildPhases = (
+				717725531DA8797800411E9E /* Sources */,
+				717725541DA8797800411E9E /* Frameworks */,
+				717725551DA8797800411E9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaDraw;
+			productName = CocoaDraw;
+			productReference = 717725571DA8797800411E9E /* CocoaDraw.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7177254F1DA8797700411E9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = macdev;
+				TargetAttributes = {
+					717725561DA8797800411E9E = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 717725521DA8797700411E9E /* Build configuration list for PBXProject "CocoaDraw" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7177254E1DA8797700411E9E;
+			productRefGroup = 717725581DA8797800411E9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				717725561DA8797800411E9E /* CocoaDraw */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		717725551DA8797800411E9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7177255F1DA8797800411E9E /* Assets.xcassets in Resources */,
+				717725621DA8797800411E9E /* Main.storyboard in Resources */,
+				717725741DA9F25500411E9E /* image.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		717725531DA8797800411E9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717725801DAA723700411E9E /* DrawObject.swift in Sources */,
+				7177256E1DA9EE5300411E9E /* ShadowDrawView.swift in Sources */,
+				7177257C1DAA2D7800411E9E /* RadialGradientView.swift in Sources */,
+				717725821DAA89CE00411E9E /* PathView.swift in Sources */,
+				7177256A1DA8799700411E9E /* AffineTransView.swift in Sources */,
+				7177257A1DAA134F00411E9E /* LineGradientView.swift in Sources */,
+				717725761DA9F2DA00411E9E /* ShadowViewController.swift in Sources */,
+				7177255D1DA8797800411E9E /* ViewController.swift in Sources */,
+				717725721DA9F1B000411E9E /* ImageViewController.swift in Sources */,
+				7177257E1DAA37B100411E9E /* StringDrawView.swift in Sources */,
+				717725781DA9F7F800411E9E /* GradientViewController.swift in Sources */,
+				7177256C1DA9279200411E9E /* LockFocusView.swift in Sources */,
+				717725701DA9F06600411E9E /* ColorViewController.swift in Sources */,
+				7177255B1DA8797800411E9E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		717725601DA8797800411E9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				717725611DA8797800411E9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		717725641DA8797800411E9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		717725651DA8797800411E9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		717725671DA8797800411E9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CocoaDraw/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = app.io.CocoaDraw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		717725681DA8797800411E9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CocoaDraw/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = app.io.CocoaDraw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		717725521DA8797700411E9E /* Build configuration list for PBXProject "CocoaDraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717725641DA8797800411E9E /* Debug */,
+				717725651DA8797800411E9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		717725661DA8797800411E9E /* Build configuration list for PBXNativeTarget "CocoaDraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717725671DA8797800411E9E /* Debug */,
+				717725681DA8797800411E9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7177254F1DA8797700411E9E /* Project object */;
+}

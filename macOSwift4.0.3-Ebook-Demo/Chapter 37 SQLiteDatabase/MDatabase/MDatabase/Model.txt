@@ -1,0 +1,23 @@
+//
+//  {% table.name %}.swift
+//  {%Project%}
+//
+//  Created by {%Author%} on {%CreateDate%}.
+//  Copyright © 2016年 {%CopyRights%}. All rights reserved.
+//
+
+import Cocoa
+
+class {% table.name %}: MModel {
+
+{% foreach(field in table.fields) %}
+    var {% field.swiftType %}: {% field.name %}?
+{% endforeach %}
+    
+    convenience init(dictionary: [String : AnyObject]) {
+        self.init()
+        self.setValuesForKeys(dictionary)
+    }
+}
+
+

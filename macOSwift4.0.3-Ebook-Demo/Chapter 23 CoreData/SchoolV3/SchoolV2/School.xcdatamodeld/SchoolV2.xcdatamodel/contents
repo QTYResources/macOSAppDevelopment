@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11215.2" systemVersion="15G31" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Classes" representedClassName=".Classes" syncable="YES">
+        <attribute name="photo" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="slogan" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="studentsNum" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="classStudent" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Students" inverseName="inClass" inverseEntity="Students" syncable="YES"/>
+        <relationship name="monitor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Students" syncable="YES"/>
+        <relationship name="teacher" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Teacher" inverseName="adminClasses" inverseEntity="Teacher" syncable="YES"/>
+    </entity>
+    <entity name="Profile" representedClassName=".Profile" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthday" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="homephone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="studentProfile" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Students" inverseName="profile" inverseEntity="Students" syncable="YES"/>
+    </entity>
+    <entity name="Students" representedClassName=".Students" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="inClass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Classes" inverseName="classStudent" inverseEntity="Classes" syncable="YES"/>
+        <relationship name="profile" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Profile" inverseName="studentProfile" inverseEntity="Profile" syncable="YES"/>
+        <relationship name="subjects" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Subjects" inverseName="students" inverseEntity="Subjects" syncable="YES"/>
+    </entity>
+    <entity name="Subjects" representedClassName=".Subjects" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sid" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="students" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Students" inverseName="subjects" inverseEntity="Students" syncable="YES"/>
+    </entity>
+    <entity name="Teacher" syncable="YES">
+        <attribute name="adminClass" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="adminClasses" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Classes" inverseName="teacher" inverseEntity="Classes" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Classes" positionX="-360" positionY="-90" width="128" height="150"/>
+        <element name="Profile" positionX="-117" positionY="-45" width="128" height="120"/>
+        <element name="Students" positionX="-380" positionY="123" width="128" height="120"/>
+        <element name="Subjects" positionX="-65" positionY="117" width="128" height="90"/>
+        <element name="Teacher" positionX="-216" positionY="72" width="128" height="90"/>
+    </elements>
+</model>

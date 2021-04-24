@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nTp-yO-jfc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="dxG-Yg-9T4">
+            <objects>
+                <viewController id="nTp-yO-jfc" customClass="ViewController" customModule="OpenMacI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="teV-mH-oOT"/>
+                        <viewControllerLayoutGuide type="bottom" id="LqI-4o-bjB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oOz-Fh-2Bs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Mac" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rha-v9-Ld1">
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MacColor" translatesAutoresizingMaskIntoConstraints="NO" id="evp-Et-AuK">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="Scl-4K-x5J"/>
+                                    <constraint firstAttribute="height" constant="95" id="ncH-Rf-r6q"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="host name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YO-Gd-hcK">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhE-Q2-sjj">
+                                <state key="normal" title="    Lock    "/>
+                                <connections>
+                                    <action selector="lockAction:" destination="nTp-yO-jfc" eventType="touchUpInside" id="GA6-Ia-QCl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjs-Bc-sqt">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="3CQ-2n-Qmy"/>
+                                </constraints>
+                                <state key="normal" title="Restart"/>
+                                <connections>
+                                    <action selector="restartAction:" destination="nTp-yO-jfc" eventType="touchUpInside" id="yR4-fz-5q0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chi-X2-ReG">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="dMZ-DT-kJd"/>
+                                </constraints>
+                                <state key="normal" title="Shutdown"/>
+                                <connections>
+                                    <action selector="shutdownAction:" destination="nTp-yO-jfc" eventType="touchUpInside" id="Ysj-Qx-uoj"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJH-H8-Hct">
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="HqT-8P-die"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Connecting..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VuQ-yD-cBF">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="cpf-Mu-MOb"/>
+                                    <constraint firstAttribute="width" constant="123" id="sBF-kt-UU5"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rha-v9-Ld1" firstAttribute="leading" secondItem="oOz-Fh-2Bs" secondAttribute="leadingMargin" constant="117" id="2wF-kP-h8S"/>
+                            <constraint firstItem="NhE-Q2-sjj" firstAttribute="top" secondItem="JJH-H8-Hct" secondAttribute="bottom" constant="21" id="3KQ-DV-2gU"/>
+                            <constraint firstItem="yjs-Bc-sqt" firstAttribute="top" secondItem="NhE-Q2-sjj" secondAttribute="bottom" constant="20" id="5KG-dF-khv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1YO-Gd-hcK" secondAttribute="trailing" constant="131" id="8BE-g1-89k"/>
+                            <constraint firstItem="evp-Et-AuK" firstAttribute="top" secondItem="Rha-v9-Ld1" secondAttribute="bottom" constant="9.5" id="Cfd-6u-gpO"/>
+                            <constraint firstItem="1YO-Gd-hcK" firstAttribute="top" secondItem="evp-Et-AuK" secondAttribute="bottom" constant="23.5" id="DlR-cy-9Kr"/>
+                            <constraint firstItem="evp-Et-AuK" firstAttribute="centerX" secondItem="oOz-Fh-2Bs" secondAttribute="centerX" id="EVI-Ln-vqb"/>
+                            <constraint firstItem="JJH-H8-Hct" firstAttribute="centerX" secondItem="oOz-Fh-2Bs" secondAttribute="centerX" id="KP6-Z6-bjh"/>
+                            <constraint firstItem="Chi-X2-ReG" firstAttribute="centerX" secondItem="oOz-Fh-2Bs" secondAttribute="centerX" id="KWd-xg-kah"/>
+                            <constraint firstItem="Rha-v9-Ld1" firstAttribute="top" secondItem="teV-mH-oOT" secondAttribute="bottom" constant="24" id="MXs-LD-BPO"/>
+                            <constraint firstItem="1YO-Gd-hcK" firstAttribute="leading" secondItem="oOz-Fh-2Bs" secondAttribute="leadingMargin" constant="131" id="eVA-Gx-OWy"/>
+                            <constraint firstItem="LqI-4o-bjB" firstAttribute="top" secondItem="Chi-X2-ReG" secondAttribute="bottom" constant="248" id="in5-j8-UHD"/>
+                            <constraint firstItem="JJH-H8-Hct" firstAttribute="top" secondItem="1YO-Gd-hcK" secondAttribute="bottom" constant="18" id="kIu-p2-Wwn"/>
+                            <constraint firstItem="Chi-X2-ReG" firstAttribute="top" secondItem="yjs-Bc-sqt" secondAttribute="bottom" constant="31" id="lcF-xU-yxa"/>
+                            <constraint firstItem="NhE-Q2-sjj" firstAttribute="leading" secondItem="oOz-Fh-2Bs" secondAttribute="leadingMargin" constant="131" id="ma5-yn-zKO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NhE-Q2-sjj" secondAttribute="trailing" constant="133" id="sX4-WF-orR"/>
+                            <constraint firstItem="yjs-Bc-sqt" firstAttribute="centerX" secondItem="oOz-Fh-2Bs" secondAttribute="centerX" id="tQk-dD-vSm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rha-v9-Ld1" secondAttribute="trailing" constant="118" id="xqN-a7-J1V"/>
+                            <constraint firstItem="JJH-H8-Hct" firstAttribute="top" secondItem="1YO-Gd-hcK" secondAttribute="bottom" constant="18" id="yh7-VD-fox"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="HqT-8P-die" id="NIj-fK-QXx"/>
+                        <outlet property="hostNameLabel" destination="1YO-Gd-hcK" id="KIM-qV-fXw"/>
+                        <outlet property="lockButton" destination="NhE-Q2-sjj" id="uCX-zo-cqh"/>
+                        <outlet property="macImageView" destination="evp-Et-AuK" id="pnA-FF-TAw"/>
+                        <outlet property="restartButton" destination="yjs-Bc-sqt" id="A4p-8v-o52"/>
+                        <outlet property="shutdownButton" destination="Chi-X2-ReG" id="jhh-G5-dTC"/>
+                        <outlet property="statusLabel" destination="VuQ-yD-cBF" id="gm1-gU-P6r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O3l-Ze-S7g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333.60000000000002" y="-449.32533733133437"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MacColor" width="140" height="80"/>
+    </resources>
+</document>
